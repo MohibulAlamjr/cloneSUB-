@@ -1,13 +1,14 @@
 import React from 'react';
 import {Fragment} from 'react';
-import Navigation from './components/navigation/Navigation'
+import '../src/style/custom.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Topnavigation from './components/navigation/Topnavigation';
 
 
 function App() {
   return ( 
   <div>
-        <Navigation/>
+       <Topnavigation></Topnavigation>
     </div>
   );
 }
