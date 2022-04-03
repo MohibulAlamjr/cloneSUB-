@@ -9,38 +9,52 @@ export default class Topnavigation extends Component {
         
           <Container fluid>
   <Row className='topNavbg'>
-            <Col>
-              <Container >
-                <Row>
-                  <Col>
-                    <Nav
-                      className='anchorDiv'
-                      activeKey="/home"
-                      onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-                    >
-  <Nav.Item>
-    <Nav.Link className='anchorDiv' href="/home">admission@stamford.university</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link className='anchorDiv' eventKey="link-1">DEGREE VERIFICATION</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link className='anchorDiv' eventKey="link-2">Library</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link className='anchorDiv'  eventKey="link-3" >IQAC</Nav.Link>
-  </Nav.Item>
+          <Col>
+            <Container >
+              <Row>
+                <Col>
+                  <Nav className='anchorDiv'activeKey="/home"onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
+                    <Nav.Item>
+                      <Nav.Link className='anchorDiv' href="/home">admission@stamford.university</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className='anchorDiv' eventKey="link-1">DEGREE VERIFICATION</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className='anchorDiv' eventKey="link-2">Library</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className='anchorDiv'  eventKey="link-3" >IQAC</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className='anchorDiv'  eventKey="link-3" >Career</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className='anchorDiv'  eventKey="link-3" >International Student</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className='anchorDiv'  eventKey="link-3" >Email</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className='anchorDiv'  eventKey="link-3" >Contact</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className='anchorDiv'  eventKey="link-3" >Create Account </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                      <Nav.Link className='anchorDiv'  eventKey="link-3" >Sign In</Nav.Link>
+                    </Nav.Item>
                       
-</Nav>
-                  </Col>
-                  
-                </Row>
-              </Container>
-            
-            </Col>
+                  </Nav>
+                </Col>
+              </Row>
+            </Container>
+          </Col>
   </Row>
-</Container>
-      </div>
+        </Container>
+        
+        
+</div>
     )
   }
 }

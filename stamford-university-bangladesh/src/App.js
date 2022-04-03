@@ -3,12 +3,15 @@ import {Fragment} from 'react';
 import '../src/style/custom.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Topnavigation from './components/navigation/Topnavigation';
+import Midnavigation from './components/navigation/Midnavigation';
+
 
 
 function App() {
   return ( 
   <div>
-       <Topnavigation></Topnavigation>
+      <Topnavigation></Topnavigation>
+      <Midnavigation></Midnavigation>
     </div>
   );
 }
