@@ -4,7 +4,7 @@ import StamfordLogo from '../../image/logo.png';
 import SekhMujiburRahman from '../../image/mujib.png';
 import Subornojoyonti from '../../image/suborno_50.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faFac } from '@fortawesome/free-solid-svg-icons';
+import {  faFacebookF,faTwitter,faGooglePlus,faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 
 export default class Midnavigation extends Component {
@@ -17,7 +17,7 @@ export default class Midnavigation extends Component {
                     <Container>
                         <Row>
                                 <Col  lg='4'> <img className="stamford" src={StamfordLogo} alt='logo' /> </Col>
-                                <Col  lg='2'><Button className='midNavButton'>Online Admission</Button></Col>
+                                <Col  lg='1'><Button className='midNavButton'>Online Admission</Button></Col>
                                 <Col lg='2'>
                                     <Form className="d-flex">
                                     <FormControl
@@ -29,8 +29,11 @@ export default class Midnavigation extends Component {
                                     <Button variant="outline-success">Search</Button>
                                     </Form>
                                 </Col>
-                                <Col lg='4'>
-                                <i><FontAwesomeIcon icon="fa-brands fa-facebook-f" /></i>
+                                <Col lg='5'>
+                                    <FontAwesomeIcon  className='icon' icon={faFacebookF} />
+                                    <FontAwesomeIcon className='icon' icon={faTwitter} />
+                                    <FontAwesomeIcon className='icon' icon={faGooglePlus} />
+                                    <FontAwesomeIcon className='icon' icon={faYoutube} />
                                    <img className="suborno" src={Subornojoyonti} alt='Sekh' />
                                    <img className="sekhMujib" src={SekhMujiburRahman} alt='Sekh' />
                                    
